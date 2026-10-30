@@ -33,7 +33,7 @@ jobs:
         run: terraform fmt -check -recursive
 
       - name: Terraform Initialize
-        run: terraform init
+        run: terraform init #removed the backend config to avoid errors when running in PRs
 
       - name: Terraform Validate
         run: terraform validate
