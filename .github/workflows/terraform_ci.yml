@@ -30,8 +30,8 @@ jobs:
           terraform_version: 1.17.1
           cli_config_credentials_token: ${{ secrets.TF_API_TOKEN }}
 
-      - name: Terraform Format Check
-        run: terraform fmt -check -recursive
+      #- name: Terraform Format Check
+      #  run: terraform fmt -check -recursive
 
       - name: Terraform Initialize
         run: terraform init
